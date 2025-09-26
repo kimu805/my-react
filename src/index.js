@@ -5,11 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MyHello from "./components/MyHello"
 import EventBasic from './components/EventBasic';
+import StateBasic from './components/StateBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <EventBasic type="date" />
+    <StateBasic init={0} />
   </React.StrictMode>
 );
 
