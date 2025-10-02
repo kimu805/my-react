@@ -13,7 +13,7 @@ import ForNest from './components/ForNest';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ForNest src={books} />
+    <ForList src={books} />
   </React.StrictMode>
 );
 

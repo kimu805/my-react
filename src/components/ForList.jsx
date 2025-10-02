@@ -1,10 +1,11 @@
 import React from "react";
 
 export default function ForList({ src }) {
+  const lowPrice = src.filter(book => book.price < 3500)
   return (
     <dl>
       {
-        src.map(elem => (
+        lowPrice.map(elem => (
           <React.Fragment key={elem.isbn}>
             <dt>
               <a href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}>
