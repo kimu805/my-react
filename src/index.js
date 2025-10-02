@@ -6,11 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import MyHello from "./components/MyHello"
 import EventBasic from './components/EventBasic';
 import StateBasic from './components/StateBasic';
+import ForList from './components/ForList';
+import books from './components/books';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StateBasic init={0} />
+    <ForList src={books} />
   </React.StrictMode>
 );
 
