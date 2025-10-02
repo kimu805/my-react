@@ -9,11 +9,12 @@ import StateBasic from './components/StateBasic';
 import ForList from './components/ForList';
 import books from './components/books';
 import ForNest from './components/ForNest';
+import SelectStyle from './components/SelectStyle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ForList src={books} />
+    <SelectStyle mode="light" />
   </React.StrictMode>
 );
 
