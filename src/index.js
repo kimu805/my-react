@@ -9,11 +9,12 @@ import EventOnce from './components/EventOnce';
 import StateForm from './components/StateForm';
 import StateFormUC from './components/StateFormUC';
 import FormTextarea from './components/FormTextarea';
+import FormSelect from './components/FormSelect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormTextarea />
+    <FormSelect />
   </React.StrictMode>
 );
 
