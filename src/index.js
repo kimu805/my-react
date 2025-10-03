@@ -12,14 +12,12 @@ import ForNest from './components/ForNest';
 import SelectStyle from './components/SelectStyle';
 import StyledPanel from './components/StyledPanel';
 import TitledPanel from './components/TitledPanel';
+import ListTemplate from './components/ListTemplate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TitledPanel>
-      <p key="title">メンバー募集中！</p>
-      <p key="body">ようこそ、WINGSプロジェクトへ！</p>
-    </TitledPanel>
+    <MyHello />
   </React.StrictMode>
 );
 
