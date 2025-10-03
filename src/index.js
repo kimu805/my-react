@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import StateParent from './components/StateParent';
 import EventObj from './components/EventObj';
 import EventOnce from './components/EventOnce';
+import StateForm from './components/StateForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <EventOnce />
+    <StateForm />
   </React.StrictMode>
 );
 
