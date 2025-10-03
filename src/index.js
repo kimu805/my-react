@@ -3,21 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import MyHello from "./components/MyHello"
-import EventBasic from './components/EventBasic';
-import StateBasic from './components/StateBasic';
-import ForList from './components/ForList';
-import books from './components/books';
-import ForNest from './components/ForNest';
-import SelectStyle from './components/SelectStyle';
-import StyledPanel from './components/StyledPanel';
-import TitledPanel from './components/TitledPanel';
-import ListTemplate from './components/ListTemplate';
+import StateParent from './components/StateParent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MyHello />
+    <StateParent />
   </React.StrictMode>
 );
 
