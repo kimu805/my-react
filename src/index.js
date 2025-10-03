@@ -7,11 +7,12 @@ import StateParent from './components/StateParent';
 import EventObj from './components/EventObj';
 import EventOnce from './components/EventOnce';
 import StateForm from './components/StateForm';
+import StateFormUC from './components/StateFormUC';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StateForm />
+    <StateFormUC />
   </React.StrictMode>
 );
 

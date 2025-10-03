@@ -7,7 +7,6 @@ export default function StateForm() {
   })
 
   const handleForm = e => {
-    console.log(e)
     setForm({
       ...form,
       [e.target.name]: e.target.value
