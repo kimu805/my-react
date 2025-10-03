@@ -13,13 +13,13 @@ import SelectStyle from './components/SelectStyle';
 import StyledPanel from './components/StyledPanel';
 import TitledPanel from './components/TitledPanel';
 
-const title = <p>メンバー募集中！</p>
-const body = <p>ようこそ、WINGSプロジェクトへ！</p>
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TitledPanel title={title} body={body}></TitledPanel>
+    <TitledPanel>
+      <p key="title">メンバー募集中！</p>
+      <p key="body">ようこそ、WINGSプロジェクトへ！</p>
+    </TitledPanel>
   </React.StrictMode>
 );
 
