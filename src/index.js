@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import StateParent from './components/StateParent';
+import EventObj from './components/EventObj';
+import EventOnce from './components/EventOnce';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StateParent />
+    <EventOnce />
   </React.StrictMode>
 );
 
