@@ -11,14 +11,15 @@ import books from './components/books';
 import ForNest from './components/ForNest';
 import SelectStyle from './components/SelectStyle';
 import StyledPanel from './components/StyledPanel';
+import TitledPanel from './components/TitledPanel';
+
+const title = <p>メンバー募集中！</p>
+const body = <p>ようこそ、WINGSプロジェクトへ！</p>
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StyledPanel>
-      <p>メンバー募集中！</p>
-      <p>ようこそ、WINGSプロジェクトへ！</p>
-    </StyledPanel>
+    <TitledPanel title={title} body={body}></TitledPanel>
   </React.StrictMode>
 );
 
