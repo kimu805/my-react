@@ -17,7 +17,7 @@ import StateForm2 from './components/StateForm2';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StateForm2 />
+    <StateTodo />
   </React.StrictMode>
 );
 
