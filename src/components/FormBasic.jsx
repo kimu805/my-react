@@ -8,11 +8,11 @@ export default function FormBasic() {
     memo: ""
   }
 
-  const { register, handleSubmit, formState: { errors } } = useForm({
+  const { register, handleSubmit, formState: { errors, isDirty, isValid } } = useForm({
     defaultValues
   })
 
-  const onsubmit = data => console.log(data)
+  const onsubmit = data => console.log("正常時のデータです。" + data)
   const onerror = err => console.log(err)
 
   return (
@@ -68,12 +68,23 @@ export default function FormBasic() {
           minLength: {
             value: 10,
             message: "備考は10文字以上にしてください。"
+          },
+          validate: {
+            ng: (value, formValues) => {
+              const ngs = ["暴力", "死", "グロ"]
+              for (const ng of ngs) {
+                if (value.includes(ng)) {
+                  return "備考にNGワードが含まれています。"
+                }
+              }
+              return true
+            }
           }
         })} />
         <div>{errors.memo?.message}</div>
       </div>
       <div>
-        <button type="submit">送信</button>
+        <button type="submit" disabled={!isDirty || !isValid}>送信</button>
       </div>
     </form>
   )

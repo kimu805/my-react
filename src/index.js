@@ -14,11 +14,12 @@ import FormList from './components/FormList';
 import StateTodo from './components/StateTodo';
 import StateForm2 from './components/StateForm2';
 import FormBasic from './components/FormBasic';
+import FormYup from './components/FormYup';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormBasic />
+    <FormYup />
   </React.StrictMode>
 );
 
