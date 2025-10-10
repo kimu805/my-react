@@ -23,12 +23,13 @@ import PortalBasic from './components/PortalBasic';
 import ErrorRoot from './components/ErrorRoot';
 import ErrorRetryRoot from './components/ErrorRetryRoot';
 import MaterialBasic from './components/MaterialBasic';
+import MaterialDrawer from './components/MaterialDrawer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div id="dialog"></div>
-    <MaterialBasic />
+    <MaterialDrawer />
   </React.StrictMode>
 );
 
