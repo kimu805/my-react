@@ -17,11 +17,13 @@ import FormBasic from './components/FormBasic';
 import FormYup from './components/FormYup';
 import LazyBasic from './components/LazyBasic';
 import LazyMulti from './components/LazyMulti';
+import SuspenseSimple from './components/SuspenseSimple';
+import SuspenseResult from './components/SuspenseReslut';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LazyMulti />
+    <SuspenseResult />
   </React.StrictMode>
 );
 
