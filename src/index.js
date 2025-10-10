@@ -21,12 +21,14 @@ import SuspenseSimple from './components/SuspenseSimple';
 import SuspenseResult from './components/SuspenseReslut';
 import PortalBasic from './components/PortalBasic';
 import ErrorRoot from './components/ErrorRoot';
+import ErrorRetryRoot from './components/ErrorRetryRoot';
+import MaterialBasic from './components/MaterialBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div id="dialog"></div>
-    <ErrorRoot />
+    <MaterialBasic />
   </React.StrictMode>
 );
 
