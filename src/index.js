@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MaterialMode from './components/MaterialMode';
+import FormMui from './components/FormMui';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MaterialMode />
+    <FormMui />
   </React.StrictMode>
 );
 
