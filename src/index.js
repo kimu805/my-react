@@ -6,12 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import MaterialMode from './components/MaterialMode';
 import FormMui from './components/FormMui';
 import StateEffect from './components/StateEffect';
+import HookTimer from './components/HookTimer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StateEffect init={0} />
+    <HookTimer init={10} />
   </React.StrictMode>
 );
 
