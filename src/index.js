@@ -8,12 +8,13 @@ import FormMui from './components/FormMui';
 import StateEffect from './components/StateEffect';
 import HookTimer from './components/HookTimer';
 import HookRef from './components/Hookref';
+import HookRefForward from './components/ HookRefForward';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HookRef />
+    <HookRefForward />
   </React.StrictMode>
 );
 
