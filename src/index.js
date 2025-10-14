@@ -5,12 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MaterialMode from './components/MaterialMode';
 import FormMui from './components/FormMui';
+import StateEffect from './components/StateEffect';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormMui />
+    <StateEffect init={0} />
   </React.StrictMode>
 );
 
