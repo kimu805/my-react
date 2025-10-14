@@ -7,12 +7,13 @@ import MaterialMode from './components/MaterialMode';
 import FormMui from './components/FormMui';
 import StateEffect from './components/StateEffect';
 import HookTimer from './components/HookTimer';
+import HookRef from './components/Hookref';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HookTimer init={10} />
+    <HookRef />
   </React.StrictMode>
 );
 
